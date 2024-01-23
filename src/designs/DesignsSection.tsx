@@ -73,7 +73,7 @@ const products: Product[] = [
 
 const DesignsSection = () => {
     return (
-        <div className="py-8 w-4/5 mx-auto">
+        <div className="py-8 w-4/5 mx-auto mb-[10%]">
             <h2 className="text-3xl font-roboto font-medium text-[#224F34] text-center mb-8">Our designs</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {products.map((product) => (

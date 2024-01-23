@@ -8,8 +8,8 @@ export default function Home() {
         <main>
           
             <DesignsSection />
-            {/* <FeedbackSection />
-            <FooterSection /> */}
+            <FeedbackSection />
+            <FooterSection />
         </main>
     )
 }
