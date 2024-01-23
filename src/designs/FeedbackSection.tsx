@@ -44,10 +44,10 @@ function FeedbackSection() {
     <div className="h-[500px] w-full text-black flex justify-center items-center flex-col lg:mt-[5%]">
       <div className="h-[20%] flex justify-center text-4xl font-robotoSlab font-bold text-[#224f34] lg:mb-[5%]">Feedback Corner</div>
       <Slider {...settings} className="w-[90%]" ref={(slider) => (sliderRef.current = slider)}>
-        {[1, 2, 3, 4, 5].map((cardNumber, index) => (
+        {[0, 1, 2, 3, 4, 5].map((cardNumber, index) => (
           <div
             key={cardNumber}
-            className={`flex justify-center items-center h-64 mx-2 px-8 rounded transition-all duration-300 ${
+            className={`flex justify-center items-center h-64 mx-[2%] px-8 rounded transition-all duration-300 ${
               (currentSlide + 1 === index) && currentSlide !== 5
                 ? 'bg-[#C2EFD4] text-[#224f34]'
                 : 'bg-white shadow-2xl'
@@ -65,13 +65,13 @@ function FeedbackSection() {
       </Slider>
       <div className="flex justify-center lg:mt-[4%] space-x-4 lg:mb-[10%]">
         <button
-          className="text-white p-2 rounded transition-all duration-300 hover:bg-[#C2EFD4]"
+          className="text-white p-2 rounded transition-all duration-300 hover:bg-[#C2EFD4] hover:scale-125"
           onClick={() => handleArrowClick('left')}
         >
           <Image src={rightArrowImage} alt="rightArrow" width={16} height={16} />
         </button>
         <button
-          className="text-white p-2 rounded transition-all duration-300 hover:bg-[#C2EFD4]"
+          className="text-white p-2 rounded transition-all duration-300 hover:bg-[#C2EFD4] hover:scale-125"
           onClick={() => handleArrowClick('right')}
         >
           <Image src={leftArrowImage} alt="leftArrow" width={16} height={16} />

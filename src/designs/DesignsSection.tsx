@@ -87,7 +87,7 @@ const DesignsSection = () => {
                 ))}
             </div>
             <div className='flex justify-center'>
-                <button type="button" className="flex items-center px-5 py-2 border rounded-sm border-[#224F34] hover:bg-[#C2EFD4] text-[#224F34]">See all <Image className='ml-3 font-poppins font-medium text-[#224F34]' src='/nextArrow.png' alt='arrow' height={20} width={20}/></button>
+                <button type="button" className="flex items-center px-5 py-2 border rounded-sm border-[#224F34] hover:bg-[#C2EFD4] transition-all duration-300 hover:scale-110 text-[#224F34]">See all <Image className='ml-3 font-poppins font-medium text-[#224F34]' src='/nextArrow.png' alt='arrow' height={20} width={20}/></button>
             </div>
         </div>
     );
